@@ -11,7 +11,7 @@ SiliconFlow 备用写作引擎
   SF_API_KEY   你的 SiliconFlow API Key
 
 可选环境变量：
-  SF_MODEL     默认 Qwen/Qwen2.5-72B-Instruct（可改为 deepseek-ai/DeepSeek-V3 等）
+  SF_MODEL     默认 deepseek-ai/DeepSeek-V4-Pro（可改为 deepseek-ai/DeepSeek-V3 等）
   SF_BASE_URL  默认 https://api.siliconflow.cn/v1
 """
 
@@ -37,7 +37,7 @@ args = parser.parse_args()
 # ---- 配置 ----
 API_KEY   = os.environ.get("SF_API_KEY", "")
 BASE_URL  = os.environ.get("SF_BASE_URL", "https://api.siliconflow.cn/v1")
-MODEL     = args.model or os.environ.get("SF_MODEL", "Qwen/Qwen2.5-72B-Instruct")
+MODEL     = args.model or os.environ.get("SF_MODEL", "deepseek-ai/DeepSeek-V4-Pro")
 
 if not API_KEY:
     print("[错误] 请设置环境变量 SF_API_KEY", file=sys.stderr)
