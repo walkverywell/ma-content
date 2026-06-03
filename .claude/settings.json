@@ -1,0 +1,37 @@
+{
+  "name": "M&A 内容自动化工作流",
+  "description": "并购公众号自动化选题与写作系统",
+  "project_type": "content-automation",
+  "version": "1.0",
+  
+  "knowledge_base": {
+    "wizard_style": "knowledge/wizard-style.md",
+    "anti_cliche": "knowledge/anti-cliche.md",
+    "sources": "knowledge/sources.md",
+    "topic_scope": "knowledge/topic-scope.md",
+    "title_formulas": "knowledge/title-formulas.md"
+  },
+  
+  "templates": {
+    "article": "templates/article-template.md"
+  },
+  
+  "output_dirs": {
+    "topics": "topics/",
+    "drafts": "drafts/"
+  },
+  
+  "naming_conventions": {
+    "topic_file": "YYYY-MM-DD.md",
+    "draft_file": "YYYY-MM-DD-标题.md"
+  },
+  
+  "permissions": {
+    "web_search": true,
+    "web_fetch": true,
+    "file_operations": true,
+    "browser_automation": true
+  },
+  
+  "notes": "编写前必读：wizard-style.md 与 anti-cliche.md；每条选题的数字都需带出处链接；任何核实不到的数据必须标注'未披露'或'待核实'"
+}
