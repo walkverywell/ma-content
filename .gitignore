@@ -5,3 +5,6 @@ desktop.ini
 # 涓存椂
 *.tmp
 *~
+
+# 含 API Key 的本地 MCP 配置（不提交）
+.claude/mcporter.json
