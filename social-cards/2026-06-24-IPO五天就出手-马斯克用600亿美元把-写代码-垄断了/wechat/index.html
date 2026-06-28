@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>WeChat Covers · SpaceX × Cursor · 并购笔记</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Noto+Sans+SC:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#c8c8c4;
+  display:flex;flex-direction:column;
+  align-items:flex-start;gap:32px;padding:32px;
+  font-family:'Inter','Noto Sans SC',sans-serif;
+}
+
+/* ══════════════════════════════════════════
+   WECHAT-WIDE  2100 × 900  ·  IKB Blue
+   21:9 头图
+══════════════════════════════════════════ */
+#wechat-wide{
+  width:2100px;height:900px;overflow:hidden;
+  background:#0431B4;color:#fff;
+  display:flex;position:relative;
+}
+
+/* Subtle right panel divider accent */
+#wechat-wide::before{
+  content:'';position:absolute;
+  right:0;top:0;width:840px;height:900px;
+  background:rgba(255,255,255,.03);
+  border-left:1px solid rgba(255,255,255,.1);
+}
+
+/* Faint watermark numeral */
+#wechat-wide::after{
+  content:'600';position:absolute;
+  left:-32px;bottom:-80px;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:560px;
+  color:rgba(255,255,255,.04);line-height:1;letter-spacing:-.05em;
+  pointer-events:none;user-select:none;
+}
+
+#wechat-wide .left{
+  flex:0 0 1260px;padding:72px 96px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  position:relative;z-index:1;
+}
+#wechat-wide .left .meta{
+  display:flex;justify-content:space-between;align-items:flex-start;
+}
+#wechat-wide .brand{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:20px;
+  letter-spacing:.2em;opacity:.6;
+}
+#wechat-wide .deal-type{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:13px;
+  letter-spacing:.42em;text-transform:uppercase;opacity:.38;
+}
+#wechat-wide .price-eyebrow{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:14px;
+  letter-spacing:.4em;text-transform:uppercase;opacity:.42;margin-bottom:12px;
+}
+#wechat-wide .price-num{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:230px;
+  line-height:.85;letter-spacing:-.04em;
+}
+#wechat-wide .price-unit{
+  font-family:'Noto Sans SC',sans-serif;font-weight:200;font-size:38px;
+  letter-spacing:.1em;opacity:.72;margin-top:14px;
+}
+#wechat-wide .left .footer{
+  display:flex;justify-content:space-between;align-items:flex-end;
+}
+#wechat-wide .parties-main{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:38px;letter-spacing:.04em;
+}
+#wechat-wide .parties-sub{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:17px;
+  opacity:.52;margin-top:6px;letter-spacing:.06em;
+}
+#wechat-wide .time-num{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:28px;
+  opacity:.65;text-align:right;
+}
+#wechat-wide .time-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:15px;
+  opacity:.42;margin-top:4px;text-align:right;
+}
+
+#wechat-wide .right{
+  flex:1;padding:72px 88px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;z-index:1;
+}
+#wechat-wide .q-eyebrow{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:11px;
+  letter-spacing:.42em;text-transform:uppercase;opacity:.36;margin-bottom:28px;
+}
+#wechat-wide .q-mark{
+  font-family:'Inter',sans-serif;font-size:108px;line-height:.65;
+  opacity:.14;margin-bottom:0;
+}
+#wechat-wide .q-text{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:29px;
+  line-height:1.9;opacity:.9;
+}
+#wechat-wide .q-text strong{font-weight:600;}
+#wechat-wide .q-rule{
+  width:44px;height:2px;background:rgba(255,255,255,.36);margin:36px 0;
+}
+#wechat-wide .q-source{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:17px;
+  opacity:.38;letter-spacing:.08em;
+}
+
+/* ══════════════════════════════════════════
+   WECHAT-SQUARE  1080 × 1080  ·  Cream
+   1:1 分享卡
+══════════════════════════════════════════ */
+#wechat-square{
+  width:1080px;height:1080px;overflow:hidden;
+  background:#f8f8f6;color:#0a0a0b;
+  display:flex;flex-direction:column;position:relative;
+}
+
+/* TOP IKB BLOCK */
+#wechat-square .top-block{
+  background:#0431B4;padding:52px 64px 48px;
+  flex:0 0 auto;display:flex;justify-content:space-between;
+  align-items:flex-end;position:relative;overflow:hidden;
+}
+#wechat-square .top-block::after{
+  content:'$';position:absolute;right:-24px;top:-48px;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:320px;
+  color:rgba(255,255,255,.06);line-height:1;pointer-events:none;
+}
+#wechat-square .top-left{position:relative;z-index:1;}
+#wechat-square .deal-eyebrow{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:12px;
+  letter-spacing:.4em;text-transform:uppercase;color:rgba(255,255,255,.42);margin-bottom:12px;
+}
+#wechat-square .deal-parties{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:32px;
+  color:#fff;letter-spacing:.04em;
+}
+#wechat-square .deal-sub{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:16px;
+  color:rgba(255,255,255,.5);margin-top:6px;letter-spacing:.06em;
+}
+#wechat-square .top-right{text-align:right;position:relative;z-index:1;}
+#wechat-square .price-main{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:96px;
+  color:#fff;line-height:.9;letter-spacing:-.02em;
+}
+#wechat-square .price-unit{
+  font-family:'Noto Sans SC',sans-serif;font-weight:200;font-size:26px;
+  color:rgba(255,255,255,.68);margin-top:6px;
+}
+
+/* MAIN CONTENT */
+#wechat-square .main{
+  flex:1;padding:56px 64px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+#wechat-square .data-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:30px 0;border-bottom:1px solid rgba(10,10,11,.07);
+}
+#wechat-square .data-row:last-child{border-bottom:none;}
+#wechat-square .row-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:22px;
+  color:rgba(10,10,11,.52);
+}
+#wechat-square .row-val-wrap{display:flex;align-items:baseline;gap:6px;}
+#wechat-square .row-val{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:54px;
+  color:#0431B4;letter-spacing:-.01em;line-height:1;
+}
+#wechat-square .row-unit{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:20px;
+  color:rgba(10,10,11,.38);
+}
+
+/* BOTTOM BAR */
+#wechat-square .bottom-bar{
+  background:#0a0a0b;padding:26px 64px;flex:0 0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+}
+#wechat-square .pub-name{
+  font-family:'Noto Sans SC',sans-serif;font-weight:500;font-size:22px;
+  color:#fff;letter-spacing:.14em;
+}
+#wechat-square .pub-date{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:17px;
+  color:rgba(255,255,255,.38);letter-spacing:.07em;
+}
+</style>
+</head>
+<body>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     WECHAT-WIDE  2100 × 900  ·  21:9 头图
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="wechat-wide">
+
+  <div class="left">
+    <div class="meta">
+      <div class="brand">并购笔记</div>
+      <div class="deal-type">M&amp;A · Full Stock Deal · 2026.06</div>
+    </div>
+
+    <div>
+      <div class="price-eyebrow">Transaction Value</div>
+      <div class="price-num">$600</div>
+      <div class="price-unit">亿美元 · 全股票收购</div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <div class="parties-main">SpaceX × Cursor</div>
+        <div class="parties-sub">AI 编程工具 · 全球第一 · IPO 后第 96 小时签约</div>
+      </div>
+      <div>
+        <div class="time-num">2026.06.16</div>
+        <div class="time-label">交易宣布日期</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="q-eyebrow">Core Insight</div>
+    <div class="q-mark">"</div>
+    <div class="q-text">
+      这是在为未来三年<br>
+      的增长<strong>提前买单</strong>。<br><br>
+      当工具变成基础设施，<br>
+      基础设施的主人就拥有了<br>
+      <strong>定义规则的权力</strong>。
+    </div>
+    <div class="q-rule"></div>
+    <div class="q-source">并购笔记 · SpaceX × Cursor 交易分析</div>
+  </div>
+
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     WECHAT-SQUARE  1080 × 1080  ·  1:1 分享卡
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="wechat-square">
+
+  <div class="top-block">
+    <div class="top-left">
+      <div class="deal-eyebrow">Full Stock Acquisition</div>
+      <div class="deal-parties">SpaceX × Cursor</div>
+      <div class="deal-sub">AI 编程工具并购 · 2026.06.16</div>
+    </div>
+    <div class="top-right">
+      <div class="price-main">$600</div>
+      <div class="price-unit">亿美元</div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="data-row">
+      <div class="row-label">IPO 到签约</div>
+      <div class="row-val-wrap">
+        <div class="row-val">96</div>
+        <div class="row-unit">小时</div>
+      </div>
+    </div>
+    <div class="data-row">
+      <div class="row-label">Cursor 年收入</div>
+      <div class="row-val-wrap">
+        <div class="row-val">$26</div>
+        <div class="row-unit">亿美元</div>
+      </div>
+    </div>
+    <div class="data-row">
+      <div class="row-label">SpaceX 市值</div>
+      <div class="row-val-wrap">
+        <div class="row-val">2</div>
+        <div class="row-unit">万亿美元</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="pub-name">并购笔记</div>
+    <div class="pub-date">2026.06.24</div>
+  </div>
+
+</div>
+
+</body>
+</html>

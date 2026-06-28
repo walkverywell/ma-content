@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>XHS Cards · SpaceX × Cursor · 并购笔记</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Noto+Sans+SC:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#c8c8c4;
+  display:flex;flex-direction:column;
+  align-items:flex-start;gap:32px;padding:32px;
+}
+[id^="xhs-"]{
+  width:1080px;height:1440px;overflow:hidden;position:relative;
+  font-family:'Inter','Noto Sans SC',sans-serif;
+}
+
+/* ══════════════════════════════════════════
+   XHS-01  COVER  ·  IKB Blue
+══════════════════════════════════════════ */
+#xhs-01{
+  background:#0431B4;color:#fff;
+  display:flex;flex-direction:column;padding:80px;
+}
+#xhs-01 .top-bar{
+  display:flex;justify-content:space-between;align-items:flex-start;
+}
+#xhs-01 .brand{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:20px;
+  letter-spacing:.18em;opacity:.65;
+}
+#xhs-01 .date{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:16px;
+  letter-spacing:.12em;opacity:.5;
+}
+#xhs-01 .hero{
+  flex:1;display:flex;flex-direction:column;justify-content:center;
+  padding:64px 0 32px;
+}
+#xhs-01 .eyebrow{
+  font-family:'Inter',sans-serif;font-weight:300;font-size:14px;
+  letter-spacing:.38em;text-transform:uppercase;opacity:.5;margin-bottom:28px;
+}
+#xhs-01 .mega-num{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:220px;
+  line-height:.88;letter-spacing:-.04em;
+}
+#xhs-01 .mega-unit{
+  font-family:'Noto Sans SC',sans-serif;font-weight:200;font-size:40px;
+  letter-spacing:.08em;opacity:.8;margin-top:16px;margin-bottom:56px;
+}
+#xhs-01 .rule{width:72px;height:2px;background:rgba(255,255,255,.4);margin-bottom:48px;}
+#xhs-01 .subtitle{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:32px;
+  line-height:1.75;opacity:.88;max-width:680px;
+}
+#xhs-01 .bottom{
+  border-top:1px solid rgba(255,255,255,.22);padding-top:40px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+#xhs-01 .parties{font-family:'Inter',sans-serif;display:flex;align-items:center;gap:16px;}
+#xhs-01 .parties .name{font-weight:700;font-size:32px;letter-spacing:.04em;}
+#xhs-01 .parties .cross{font-weight:200;font-size:28px;opacity:.45;}
+#xhs-01 .badge{
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);
+  padding:18px 28px;text-align:center;
+}
+#xhs-01 .badge-num{font-family:'Inter',sans-serif;font-weight:700;font-size:44px;line-height:1;}
+#xhs-01 .badge-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:13px;
+  opacity:.65;margin-top:6px;letter-spacing:.1em;
+}
+
+/* ══════════════════════════════════════════
+   XHS-02  PRICING BREAKDOWN  ·  Cream
+══════════════════════════════════════════ */
+#xhs-02{
+  background:#f8f8f6;color:#0a0a0b;
+  display:flex;flex-direction:column;padding:72px 80px 64px;
+}
+#xhs-02 .eyebrow{
+  font-family:'Inter',sans-serif;font-weight:300;font-size:12px;
+  letter-spacing:.38em;text-transform:uppercase;color:#0431B4;margin-bottom:18px;
+}
+#xhs-02 .title{
+  font-family:'Noto Sans SC',sans-serif;font-weight:700;font-size:52px;
+  line-height:1.2;margin-bottom:56px;
+}
+#xhs-02 .title em{font-style:normal;color:#0431B4;}
+#xhs-02 .cols{display:flex;gap:56px;flex:1;}
+#xhs-02 .col{flex:1;display:flex;flex-direction:column;}
+#xhs-02 .col-head{
+  font-family:'Noto Sans SC',sans-serif;font-weight:500;font-size:14px;
+  letter-spacing:.2em;color:#0431B4;padding-bottom:14px;
+  border-bottom:2px solid #0431B4;
+}
+#xhs-02 .col-body{
+  flex:1;display:flex;flex-direction:column;justify-content:space-between;
+  padding:24px 0 8px;
+}
+#xhs-02 .d-row{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  padding:18px 0;border-bottom:1px solid rgba(10,10,11,.07);
+}
+#xhs-02 .d-row:last-child{border-bottom:none;}
+#xhs-02 .d-num{
+  font-family:'Inter',sans-serif;font-weight:600;font-size:36px;color:#0431B4;
+}
+#xhs-02 .d-row.hi .d-num{font-size:48px;font-weight:700;}
+#xhs-02 .d-row.faded .d-num{opacity:.38;}
+#xhs-02 .d-info{text-align:right;}
+#xhs-02 .d-date{
+  font-family:'Inter',sans-serif;font-weight:300;font-size:14px;
+  color:rgba(10,10,11,.38);letter-spacing:.06em;
+}
+#xhs-02 .d-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:13px;
+  color:rgba(10,10,11,.45);margin-top:3px;
+}
+#xhs-02 .connector{
+  text-align:center;color:#0431B4;font-size:22px;opacity:.3;padding:4px 0;
+}
+#xhs-02 .footer-bar{
+  background:#0431B4;margin:40px -80px -64px;padding:36px 80px;
+  display:flex;justify-content:space-around;
+}
+#xhs-02 .f-stat{text-align:center;color:#fff;}
+#xhs-02 .f-num{font-family:'Inter',sans-serif;font-weight:700;font-size:38px;}
+#xhs-02 .f-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:14px;
+  opacity:.72;margin-top:6px;letter-spacing:.08em;
+}
+
+/* ══════════════════════════════════════════
+   XHS-03  PAYMENT STRUCTURE  ·  Ledger
+══════════════════════════════════════════ */
+#xhs-03{
+  background:#f8f8f6;color:#0a0a0b;
+  display:flex;flex-direction:column;padding:72px 80px 0;
+}
+#xhs-03 .eyebrow{
+  font-family:'Inter',sans-serif;font-weight:300;font-size:12px;
+  letter-spacing:.38em;text-transform:uppercase;color:#0431B4;margin-bottom:18px;
+}
+#xhs-03 .title{
+  font-family:'Noto Sans SC',sans-serif;font-weight:700;font-size:52px;
+  line-height:1.2;margin-bottom:52px;
+}
+#xhs-03 .ledger{flex:1;}
+#xhs-03 .l-head{
+  display:flex;justify-content:space-between;
+  font-family:'Inter',sans-serif;font-weight:300;font-size:11px;
+  letter-spacing:.35em;text-transform:uppercase;color:rgba(10,10,11,.35);
+  padding-bottom:14px;border-bottom:2px solid #0431B4;
+}
+#xhs-03 .l-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:28px 0;border-bottom:1px solid rgba(10,10,11,.07);
+}
+#xhs-03 .l-row.main-row{
+  background:rgba(4,49,180,.04);margin:0 -16px;padding:28px 16px;
+}
+#xhs-03 .l-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:400;font-size:21px;
+}
+#xhs-03 .l-label small{
+  display:block;font-weight:300;font-size:14px;color:rgba(10,10,11,.45);
+  margin-top:4px;font-family:'Noto Sans SC',sans-serif;
+}
+#xhs-03 .l-amount{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:30px;
+  color:#0431B4;min-width:140px;text-align:right;
+}
+#xhs-03 .l-row.main-row .l-amount{font-size:44px;}
+#xhs-03 .l-amount.muted{color:rgba(10,10,11,.4);font-weight:500;}
+#xhs-03 .total-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:24px 0 32px;border-top:3px solid rgba(10,10,11,.15);
+}
+#xhs-03 .total-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:500;font-size:18px;
+  color:rgba(10,10,11,.5);
+}
+#xhs-03 .total-amount{
+  font-family:'Inter',sans-serif;font-weight:600;font-size:22px;
+  color:rgba(10,10,11,.5);
+}
+#xhs-03 .q-block{
+  background:#0431B4;padding:44px 56px;margin:0 -80px;
+}
+#xhs-03 .q-mark{
+  font-family:'Inter',sans-serif;font-size:96px;
+  color:rgba(255,255,255,.15);line-height:.7;margin-bottom:-8px;
+}
+#xhs-03 .q-text{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:23px;
+  line-height:1.8;color:#fff;
+}
+#xhs-03 .q-text strong{font-weight:600;}
+
+/* ══════════════════════════════════════════
+   XHS-04  KEY DETAILS  ·  Cream + Suspense
+══════════════════════════════════════════ */
+#xhs-04{
+  background:#f8f8f6;color:#0a0a0b;
+  display:flex;flex-direction:column;padding:72px 80px 64px;
+}
+#xhs-04 .eyebrow{
+  font-family:'Inter',sans-serif;font-weight:300;font-size:12px;
+  letter-spacing:.38em;text-transform:uppercase;color:#0431B4;margin-bottom:18px;
+}
+#xhs-04 .title{
+  font-family:'Noto Sans SC',sans-serif;font-weight:700;font-size:52px;
+  line-height:1.2;margin-bottom:56px;
+}
+#xhs-04 .items{flex:1;display:flex;flex-direction:column;justify-content:space-between;}
+#xhs-04 .item{
+  display:flex;gap:28px;align-items:flex-start;
+  padding:28px 0;border-bottom:1px solid rgba(10,10,11,.07);
+}
+#xhs-04 .item:last-child{border-bottom:none;}
+#xhs-04 .idx{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:56px;
+  color:#0431B4;opacity:.45;line-height:1;min-width:52px;padding-top:4px;
+}
+#xhs-04 .body{flex:1;}
+#xhs-04 .q{
+  font-family:'Noto Sans SC',sans-serif;font-weight:500;font-size:22px;
+  line-height:1.5;margin-bottom:10px;
+}
+#xhs-04 .a{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:18px;
+  line-height:1.75;color:rgba(10,10,11,.58);
+}
+#xhs-04 .a strong{color:#0431B4;font-weight:500;}
+#xhs-04 .footer-q{
+  margin-top:32px;padding:28px 32px;
+  border:1.5px solid #0431B4;display:flex;align-items:center;gap:20px;
+}
+#xhs-04 .footer-q .qm{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:44px;
+  color:#0431B4;line-height:1;opacity:.75;
+}
+#xhs-04 .footer-q .qt{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:19px;line-height:1.65;
+}
+
+/* ══════════════════════════════════════════
+   XHS-05  CONCLUSION  ·  IKB Blue
+══════════════════════════════════════════ */
+#xhs-05{
+  background:#0431B4;color:#fff;
+  display:flex;flex-direction:column;padding:80px;
+}
+#xhs-05 .top-bar{
+  display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:72px;
+}
+#xhs-05 .brand{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:20px;
+  letter-spacing:.18em;opacity:.6;
+}
+#xhs-05 .date{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:16px;
+  letter-spacing:.1em;opacity:.45;
+}
+#xhs-05 .quote-zone{flex:1;display:flex;flex-direction:column;justify-content:center;}
+#xhs-05 .big-qm{
+  font-family:'Inter',sans-serif;font-size:128px;line-height:.65;opacity:.16;margin-bottom:8px;
+}
+#xhs-05 .big-quote{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:34px;
+  line-height:1.85;opacity:.92;
+}
+#xhs-05 .big-quote strong{
+  font-weight:700;display:block;font-size:36px;margin-top:8px;opacity:1;
+}
+#xhs-05 .stats-row{
+  display:flex;border-top:1px solid rgba(255,255,255,.2);
+  border-bottom:1px solid rgba(255,255,255,.2);margin:48px 0 36px;
+}
+#xhs-05 .s-col{
+  flex:1;padding:36px 0;text-align:center;
+  border-right:1px solid rgba(255,255,255,.14);
+}
+#xhs-05 .s-col:last-child{border-right:none;}
+#xhs-05 .s-big{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:44px;line-height:1;margin-bottom:10px;
+}
+#xhs-05 .s-big sup{font-size:22px;font-weight:300;opacity:.75;}
+#xhs-05 .s-label{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:15px;
+  opacity:.58;letter-spacing:.06em;
+}
+#xhs-05 .open-q{
+  font-family:'Noto Sans SC',sans-serif;font-weight:300;font-size:22px;
+  line-height:1.75;opacity:.72;
+}
+#xhs-05 .bottom-bar{
+  border-top:1px solid rgba(255,255,255,.18);padding-top:28px;margin-top:40px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+#xhs-05 .brand-b{
+  font-family:'Noto Sans SC',sans-serif;font-weight:200;font-size:17px;
+  letter-spacing:.22em;opacity:.45;
+}
+#xhs-05 .tag-b{
+  font-family:'Inter',sans-serif;font-weight:200;font-size:11px;
+  letter-spacing:.35em;text-transform:uppercase;opacity:.32;
+}
+</style>
+</head>
+<body>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     XHS-01  COVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="xhs-01">
+  <div class="top-bar">
+    <div class="brand">并购笔记</div>
+    <div class="date">2026.06.24</div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Mergers &amp; Acquisitions · Full Stock Deal</div>
+    <div class="mega-num">$600</div>
+    <div class="mega-unit">亿美元 · 全股票收购</div>
+    <div class="rule"></div>
+    <div class="subtitle">马斯克在 IPO 后第 96 小时<br>签下了 AI 编程工具霸主<br>Cursor</div>
+  </div>
+
+  <div class="bottom">
+    <div class="parties">
+      <span class="name">SpaceX</span>
+      <span class="cross">×</span>
+      <span class="name">Cursor</span>
+    </div>
+    <div class="badge">
+      <div class="badge-num">96</div>
+      <div class="badge-label">小时 · 从敲钟到签约</div>
+    </div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     XHS-02  PRICING BREAKDOWN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="xhs-02">
+  <div class="eyebrow">Valuation Analysis</div>
+  <div class="title">Cursor 凭什么<br>值 <em>$600 亿</em></div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="col-head">估值飞升</div>
+      <div class="col-body">
+        <div class="d-row">
+          <div class="d-num">$293亿</div>
+          <div class="d-info">
+            <div class="d-date">2025.11</div>
+            <div class="d-label">A轮后估值</div>
+          </div>
+        </div>
+        <div class="connector">↓</div>
+        <div class="d-row">
+          <div class="d-num">$500亿</div>
+          <div class="d-info">
+            <div class="d-date">2026.03</div>
+            <div class="d-label">新一轮估值</div>
+          </div>
+        </div>
+        <div class="connector">↓</div>
+        <div class="d-row hi">
+          <div class="d-num">$600亿</div>
+          <div class="d-info">
+            <div class="d-date">2026.06</div>
+            <div class="d-label">SpaceX收购价</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="col-head">营收飞升</div>
+      <div class="col-body">
+        <div class="d-row">
+          <div class="d-num">$1亿</div>
+          <div class="d-info">
+            <div class="d-date">2025.01</div>
+            <div class="d-label">年化营收</div>
+          </div>
+        </div>
+        <div class="d-row">
+          <div class="d-num">$5亿</div>
+          <div class="d-info">
+            <div class="d-date">2025.06</div>
+            <div class="d-label">年化营收</div>
+          </div>
+        </div>
+        <div class="d-row">
+          <div class="d-num">$10亿</div>
+          <div class="d-info">
+            <div class="d-date">2025.12</div>
+            <div class="d-label">年化营收</div>
+          </div>
+        </div>
+        <div class="d-row hi">
+          <div class="d-num">$26亿</div>
+          <div class="d-info">
+            <div class="d-date">2026.04</div>
+            <div class="d-label">实际年收入</div>
+          </div>
+        </div>
+        <div class="d-row faded">
+          <div class="d-num">$60亿</div>
+          <div class="d-info">
+            <div class="d-date">2026预测</div>
+            <div class="d-label">内部预测</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="f-stat">
+      <div class="f-num">60%</div>
+      <div class="f-label">企业客户占比</div>
+    </div>
+    <div class="f-stat">
+      <div class="f-num">50%</div>
+      <div class="f-label">财富500强在用</div>
+    </div>
+    <div class="f-stat">
+      <div class="f-num">4年</div>
+      <div class="f-label">公司成立年限</div>
+    </div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     XHS-03  PAYMENT STRUCTURE · Ledger
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="xhs-03">
+  <div class="eyebrow">Deal Structure</div>
+  <div class="title">这 600 亿怎么付<br>怎么保</div>
+
+  <div class="ledger">
+    <div class="l-head">
+      <span>条款</span>
+      <span>金额</span>
+    </div>
+
+    <div class="l-row main-row">
+      <div class="l-label">
+        交易总价
+        <small>全股票支付 · SpaceX 股票结算</small>
+      </div>
+      <div class="l-amount">$600亿</div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-label">
+        特定原因终止 · 现金
+        <small>交易因特定原因告吹时触发</small>
+      </div>
+      <div class="l-amount">$15亿</div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-label">
+        特定原因终止 · 算力
+        <small>Colossus 超算资源赔偿</small>
+      </div>
+      <div class="l-amount">$85亿</div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-label">
+        反垄断监管终止费
+        <small>欧美监管机构阻拦时触发</small>
+      </div>
+      <div class="l-amount">$40亿</div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-label">
+        4月选择权 · 替代方案
+        <small>深度合作＋算力支持（备选路径）</small>
+      </div>
+      <div class="l-amount muted">$100亿</div>
+    </div>
+
+    <div class="total-row">
+      <div class="total-label">SpaceX 最大风险敞口</div>
+      <div class="total-amount">≤ $140亿</div>
+    </div>
+  </div>
+
+  <div class="q-block">
+    <div class="q-mark">"</div>
+    <div class="q-text">
+      摆脱被卡脖子的风险，还能反手用<br>
+      自有算力压低成本，<strong>把毛利率从行业<br>
+      平均的 70% 推到 90% 以上</strong>
+    </div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     XHS-04  KEY DETAILS · Suspense
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="xhs-04">
+  <div class="eyebrow">Hidden Details</div>
+  <div class="title">交易里藏着<br>的四个秘密</div>
+
+  <div class="items">
+    <div class="item">
+      <div class="idx">01</div>
+      <div class="body">
+        <div class="q">4月就埋下了"选择权"棋子</div>
+        <div class="a">签约前两个月，SpaceX 给了 Cursor 两个选项：<strong>$600亿全收购</strong>，或支付 <strong>$100亿</strong>换深度合作＋算力。无论哪条路马斯克都不亏。</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="idx">02</div>
+      <div class="body">
+        <div class="q">xAI 并购才是这盘棋的前传</div>
+        <div class="a">今年 2 月，SpaceX 全股票吞下 xAI，Grok 大模型和 Colossus 超算入账。Cursor 是最后拼图：<strong>算力 → 模型 → 数据 → 应用</strong>，闭环完成。</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="idx">03</div>
+      <div class="body">
+        <div class="q">每天数百万行企业代码流向哪里？</div>
+        <div class="a">Cursor 处理的代码含<strong>商业逻辑、安全漏洞、未公开产品路线图</strong>。数据一旦进入 xAI 训练管道，隐私边界在哪里？</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="idx">04</div>
+      <div class="body">
+        <div class="q">IPO 市值 2 万亿，最大代价不过五分之一</div>
+        <div class="a">$600亿约占 SpaceX 上市市值的 <strong>30%</strong>，全部股票支付。即便交易破裂，损失上限 <strong>$140亿</strong>，小于 IPO 募资的五分之一。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-q">
+    <div class="qm">?</div>
+    <div class="qt">监管机构会放行一家刚上市的火箭公司，收购垄断性 AI 编程工具吗？</div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     XHS-05  CONCLUSION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="xhs-05">
+  <div class="top-bar">
+    <div class="brand">并购笔记</div>
+    <div class="date">2026.06.24</div>
+  </div>
+
+  <div class="quote-zone">
+    <div class="big-qm">"</div>
+    <div class="big-quote">
+      当写代码这件事本身<br>
+      都要依赖两三家巨头的工具时，
+      <strong>创新的火种<br>还能在哪里燃烧？</strong>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="s-col">
+      <div class="s-big">$600<sup>亿</sup></div>
+      <div class="s-label">收购总价</div>
+    </div>
+    <div class="s-col">
+      <div class="s-big">$26<sup>亿</sup></div>
+      <div class="s-label">Cursor 年收入</div>
+    </div>
+    <div class="s-col">
+      <div class="s-big">96<sup>h</sup></div>
+      <div class="s-label">IPO 到签约</div>
+    </div>
+  </div>
+
+  <div class="open-q">
+    这场 600 亿美元的豪赌，最终会把 AI 编程<br>
+    推向普惠的未来，还是造就新的技术寡头？
+  </div>
+
+  <div class="bottom-bar">
+    <div class="brand-b">并购笔记</div>
+    <div class="tag-b">Mergers &amp; Acquisitions</div>
+  </div>
+</div>
+
+</body>
+</html>

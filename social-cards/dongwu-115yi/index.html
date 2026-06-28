@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh" data-accent="ikb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>东吴115亿收购东海证券 · 公众号封面对</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── Swiss IKB theme tokens ── */
+:root {
+  --paper:     #fafaf8;
+  --ink:       #0a0a0a;
+  --grey-1:    #f0f0ee;
+  --grey-2:    #d4d4d2;
+  --grey-3:    #737373;
+  --accent:    #002FA7;
+  --accent-on: #ffffff;
+  --sans: 'Inter', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+figure { margin: 0; }
+
+/* ── Poster containers ── */
+.poster {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  font-family: var(--sans);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+}
+.poster.wide  { width: 2100px; height: 900px; }
+.poster.square { width: 1080px; height: 1080px; }
+
+/* ── Type scale (Swiss) ── */
+/* "The larger, the lighter" — hard rule */
+.h-hero      { font-size: 148px; font-weight: 300; line-height: 0.96; letter-spacing: -0.03em; }
+.h-statement { font-size: 96px;  font-weight: 300; line-height: 1.00; letter-spacing: -0.02em; }
+.h-xl        { font-size: 72px;  font-weight: 300; line-height: 1.05; letter-spacing: -0.015em;}
+.num-mega    { font-size: 80px;  font-weight: 700; line-height: 1.00; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.num-lg      { font-size: 56px;  font-weight: 700; line-height: 1.00; letter-spacing: -0.01em; }
+.h-md        { font-size: 36px;  font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; }
+.t-cat       { font-size: 18px;  font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--mono); color: var(--grey-3); }
+.t-meta      { font-size: 16px;  font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--mono); color: var(--grey-3); }
+.lbl         { font-size: 15px;  font-weight: 400; letter-spacing: 0.08em; font-family: var(--mono); color: var(--grey-3); }
+.body-sm     { font-size: 22px;  font-weight: 400; line-height: 1.55; color: var(--grey-3); }
+
+/* ── Accent utilities ── */
+.accent-bg   { background: var(--accent); color: var(--accent-on); }
+.accent-txt  { color: var(--accent); }
+.grey-1-bg   { background: var(--grey-1); }
+.grey-2-bg   { background: var(--grey-2); }
+.ink-bg      { background: var(--ink); color: var(--paper); }
+
+/* ── Hairline rules ── */
+.rule-h      { width: 100%; height: 1px; background: var(--grey-2); }
+.rule-v      { width: 1px; background: var(--grey-2); align-self: stretch; }
+
+/* ── Layout helpers ── */
+.content     { position: relative; width: 100%; height: 100%; }
+.stack       { display: flex; flex-direction: column; }
+.row         { display: flex; flex-direction: row; align-items: flex-start; }
+.gap-2       { gap: 16px; }
+.gap-3       { gap: 24px; }
+.gap-4       { gap: 32px; }
+.gap-5       { gap: 40px; }
+.gap-6       { gap: 56px; }
+.gap-7       { gap: 72px; }
+.flex-1      { flex: 1; }
+.items-end   { align-items: flex-end; }
+.items-center{ align-items: center; }
+.justify-end { justify-content: flex-end; }
+.mt-auto     { margin-top: auto; }
+
+/* ── Stat block (KPI) ── */
+.stat-block  { display: flex; flex-direction: column; gap: 6px; }
+.stat-block .num { font-family: var(--sans); font-weight: 700; }
+.stat-divider { width: 1px; background: var(--grey-2); }
+
+/* ── Footer / chrome ── */
+.chrome-min  { display: flex; justify-content: space-between; align-items: center; }
+.foot        { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; }
+
+/* ── Accent chip ── */
+.chip        { display: inline-block; background: var(--accent); color: var(--accent-on);
+               padding: 6px 16px; font-family: var(--mono); font-size: 15px;
+               letter-spacing: 0.10em; text-transform: uppercase; }
+
+/* ── Bar / data lines ── */
+.bar-line    { height: 6px; background: var(--accent); border-radius: 0; }
+.bar-line.grey { background: var(--grey-2); }
+
+/* ── Preview wrapper ── */
+.preview-section { padding: 80px; background: #e8e8e6; display: flex; flex-direction: column; gap: 48px; }
+.preview-label { font-family: var(--mono); font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 12px; }
+.preview-scale { transform-origin: top left; }
+</style>
+</head>
+<body style="background:#ddd; padding:60px; display:flex; flex-direction:column; gap:80px;">
+
+<!-- ══════════════════════════════════════════════════════════════════
+     POSTER 1 · WeChat 21:9 Main Cover
+     Recipe: Swiss S01 adapted — Left column KPI statements + Right accent slab
+     2100 × 900 px
+════════════════════════════════════════════════════════════════════ -->
+<div>
+  <p style="font-family:monospace;font-size:13px;color:#666;margin-bottom:12px;">21:9 主封面 · 2100×900</p>
+  <section class="poster wide" id="wechat-21x9">
+    <div class="content row" style="height:100%;">
+
+      <!-- LEFT: text column — 55% width -->
+      <div class="stack gap-5" style="width:55%; padding:72px 80px 64px 96px; justify-content:space-between;">
+
+        <!-- Top chrome -->
+        <div class="chrome-min">
+          <span class="t-cat">并购分析 · M&amp;A</span>
+          <span class="t-meta">2026 · 06 · 04</span>
+        </div>
+
+        <!-- Main title block -->
+        <div class="stack gap-4">
+          <div class="chip">2026 券商整合第一单</div>
+          <div style="margin-top:8px;">
+            <h1 class="h-statement" style="font-size:88px; font-weight:300; letter-spacing:-0.02em; line-height:1.02; color:var(--ink);">
+              东吴115亿<br>买下东海证券
+            </h1>
+          </div>
+          <div class="rule-h" style="margin-top:4px;"></div>
+          <p style="font-size:26px; font-weight:400; color:var(--grey-3); line-height:1.5; max-width:700px;">
+            它赌的是"江苏第二"这四个字，不是东海那 0.23 亿净利润
+          </p>
+        </div>
+
+        <!-- Bottom KPI row -->
+        <div class="row gap-6 items-end">
+          <div class="stat-block">
+            <p class="num-mega accent-txt">115</p>
+            <p class="lbl">亿元 对价</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <p class="num-mega" style="font-size:60px;">83.68%</p>
+            <p class="lbl">股权比例</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <p class="num-mega" style="font-size:60px;">40.76%</p>
+            <p class="lbl">评估增值率</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <p class="num-mega" style="font-size:60px;">+30.8%</p>
+            <p class="lbl">合并后总资产增幅</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RULE between columns -->
+      <div class="rule-v"></div>
+
+      <!-- RIGHT: accent slab — 45% width -->
+      <div class="accent-bg stack gap-5" style="width:45%; padding:72px 72px 64px 72px; justify-content:space-between;">
+
+        <!-- Category label -->
+        <div class="chrome-min">
+          <span style="font-family:var(--mono); font-size:16px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.55);">
+            Securities · 券商整合
+          </span>
+        </div>
+
+        <!-- Visual number hero -->
+        <div class="stack gap-3">
+          <p style="font-family:var(--mono); font-size:15px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.55);">
+            净利润 vs 对价
+          </p>
+          <div class="row items-end gap-4" style="margin-top:8px;">
+            <div class="stack gap-1">
+              <p style="font-family:var(--sans); font-weight:700; font-size:110px; line-height:1; letter-spacing:-0.03em; color:#fff;">500×</p>
+              <p style="font-family:var(--mono); font-size:16px; letter-spacing:0.10em; color:rgba(255,255,255,0.65);">对价 / 年利润倍数</p>
+            </div>
+          </div>
+          <div style="width:100%; height:1px; background:rgba(255,255,255,0.20); margin-top:8px;"></div>
+        </div>
+
+        <!-- Three insight lines -->
+        <div class="stack gap-4">
+          <div class="stack gap-1">
+            <p style="font-family:var(--mono); font-size:14px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.45);">支付结构</p>
+            <p style="font-family:var(--sans); font-size:26px; font-weight:500; color:#fff;">93.6% 发股 · 6.4% 现金</p>
+          </div>
+          <div style="width:100%; height:1px; background:rgba(255,255,255,0.15);"></div>
+          <div class="stack gap-1">
+            <p style="font-family:var(--mono); font-size:14px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.45);">股东会</p>
+            <p style="font-family:var(--sans); font-size:26px; font-weight:500; color:#fff;">2026 · 06 · 18</p>
+          </div>
+          <div style="width:100%; height:1px; background:rgba(255,255,255,0.15);"></div>
+          <div class="stack gap-1">
+            <p style="font-family:var(--mono); font-size:14px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.45);">来源</p>
+            <p style="font-family:var(--sans); font-size:22px; font-weight:400; color:rgba(255,255,255,0.75);">新浪财经 · 21经济网 · 重组草案</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     POSTER 2 · WeChat 1:1 Square Cover
+     Recipe: Swiss — big centered type, no image, strong contrast
+     1080 × 1080 px
+════════════════════════════════════════════════════════════════════ -->
+<div>
+  <p style="font-family:monospace;font-size:13px;color:#666;margin-bottom:12px;">1:1 方形卡 · 1080×1080</p>
+  <section class="poster square" id="wechat-1x1">
+    <div class="content stack" style="padding:88px 96px; height:100%; justify-content:space-between;">
+
+      <!-- Top chrome -->
+      <div class="chrome-min">
+        <span class="t-cat">并购分析</span>
+        <span class="t-meta">2026 · 06</span>
+      </div>
+
+      <!-- Core message — centered vertically -->
+      <div class="stack gap-5" style="flex:1; justify-content:center; padding:40px 0;">
+        <p style="font-family:var(--mono); font-size:17px; letter-spacing:0.20em; text-transform:uppercase; color:var(--grey-3);">
+          SECURITIES · 券商整合
+        </p>
+        <div class="rule-h"></div>
+        <h1 class="h-hero" style="font-size:128px; font-weight:300; line-height:0.96; letter-spacing:-0.03em; color:var(--ink);">
+          买地盘<br>不买利润
+        </h1>
+        <div class="rule-h"></div>
+        <p class="body-sm" style="font-size:24px; max-width:640px; line-height:1.6;">
+          东吴 115 亿 · 东海 0.23 亿净利润<br>这笔账，赌的是"江苏第二"
+        </p>
+      </div>
+
+      <!-- Bottom accent bar + meta -->
+      <div class="stack gap-4">
+        <div style="width:100%; height:5px; background:var(--accent);"></div>
+        <div class="foot">
+          <span class="t-meta">东吴证券 × 东海证券</span>
+          <span class="t-meta">来源 · 新浪财经 / 21经济网</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     PAIR PREVIEW — scaled side by side for visual check
+════════════════════════════════════════════════════════════════════ -->
+<div>
+  <p style="font-family:monospace;font-size:13px;color:#666;margin-bottom:24px;">封面对预览（缩放至可视尺寸）</p>
+  <div style="display:flex; flex-direction:column; gap:24px; background:#e0e0de; padding:40px; border-radius:2px;">
+    <!-- 21:9 scaled to 840px wide -->
+    <div style="transform:scale(0.40); transform-origin:top left; width:2100px; height:900px; pointer-events:none;">
+      <section class="poster wide" style="width:2100px;height:900px;">
+        <div class="content row" style="height:100%;">
+          <div class="stack gap-5" style="width:55%;padding:72px 80px 64px 96px;justify-content:space-between;">
+            <div class="chrome-min"><span class="t-cat">并购分析 · M&amp;A</span><span class="t-meta">2026 · 06 · 04</span></div>
+            <div class="stack gap-4">
+              <div class="chip">2026 券商整合第一单</div>
+              <div style="margin-top:8px;"><h1 class="h-statement" style="font-size:88px;font-weight:300;letter-spacing:-0.02em;line-height:1.02;color:var(--ink);">东吴115亿<br>买下东海证券</h1></div>
+              <div class="rule-h" style="margin-top:4px;"></div>
+              <p style="font-size:26px;font-weight:400;color:var(--grey-3);line-height:1.5;max-width:700px;">它赌的是"江苏第二"这四个字，不是东海那 0.23 亿净利润</p>
+            </div>
+            <div class="row gap-6 items-end">
+              <div class="stat-block"><p class="num-mega accent-txt">115</p><p class="lbl">亿元 对价</p></div>
+              <div class="stat-divider"></div>
+              <div class="stat-block"><p class="num-mega" style="font-size:60px;">83.68%</p><p class="lbl">股权比例</p></div>
+              <div class="stat-divider"></div>
+              <div class="stat-block"><p class="num-mega" style="font-size:60px;">40.76%</p><p class="lbl">评估增值率</p></div>
+              <div class="stat-divider"></div>
+              <div class="stat-block"><p class="num-mega" style="font-size:60px;">+30.8%</p><p class="lbl">合并后总资产增幅</p></div>
+            </div>
+          </div>
+          <div class="rule-v"></div>
+          <div class="accent-bg stack gap-5" style="width:45%;padding:72px 72px 64px 72px;justify-content:space-between;">
+            <div class="chrome-min"><span style="font-family:var(--mono);font-size:16px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);">Securities · 券商整合</span></div>
+            <div class="stack gap-3">
+              <p style="font-family:var(--mono);font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);">净利润 vs 对价</p>
+              <div class="row items-end gap-4" style="margin-top:8px;"><div class="stack gap-1"><p style="font-family:var(--sans);font-weight:700;font-size:110px;line-height:1;letter-spacing:-0.03em;color:#fff;">500×</p><p style="font-family:var(--mono);font-size:16px;letter-spacing:0.10em;color:rgba(255,255,255,0.65);">对价 / 年利润倍数</p></div></div>
+              <div style="width:100%;height:1px;background:rgba(255,255,255,0.20);margin-top:8px;"></div>
+            </div>
+            <div class="stack gap-4">
+              <div class="stack gap-1"><p style="font-family:var(--mono);font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);">支付结构</p><p style="font-family:var(--sans);font-size:26px;font-weight:500;color:#fff;">93.6% 发股 · 6.4% 现金</p></div>
+              <div style="width:100%;height:1px;background:rgba(255,255,255,0.15);"></div>
+              <div class="stack gap-1"><p style="font-family:var(--mono);font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);">股东会</p><p style="font-family:var(--sans);font-size:26px;font-weight:500;color:#fff;">2026 · 06 · 18</p></div>
+              <div style="width:100%;height:1px;background:rgba(255,255,255,0.15);"></div>
+              <div class="stack gap-1"><p style="font-family:var(--mono);font-size:14px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);">来源</p><p style="font-family:var(--sans);font-size:22px;font-weight:400;color:rgba(255,255,255,0.75);">新浪财经 · 21经济网 · 重组草案</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- 1:1 scaled to 432px -->
+    <div style="transform:scale(0.40); transform-origin:top left; width:1080px; height:1080px; pointer-events:none;">
+      <section class="poster square" style="width:1080px;height:1080px;">
+        <div class="content stack" style="padding:88px 96px;height:100%;justify-content:space-between;">
+          <div class="chrome-min"><span class="t-cat">并购分析</span><span class="t-meta">2026 · 06</span></div>
+          <div class="stack gap-5" style="flex:1;justify-content:center;padding:40px 0;">
+            <p style="font-family:var(--mono);font-size:17px;letter-spacing:0.20em;text-transform:uppercase;color:var(--grey-3);">SECURITIES · 券商整合</p>
+            <div class="rule-h"></div>
+            <h1 class="h-hero" style="font-size:128px;font-weight:300;line-height:0.96;letter-spacing:-0.03em;color:var(--ink);">买地盘<br>不买利润</h1>
+            <div class="rule-h"></div>
+            <p class="body-sm" style="font-size:24px;max-width:640px;line-height:1.6;">东吴 115 亿 · 东海 0.23 亿净利润<br>这笔账，赌的是"江苏第二"</p>
+          </div>
+          <div class="stack gap-4">
+            <div style="width:100%;height:5px;background:var(--accent);"></div>
+            <div class="foot"><span class="t-meta">东吴证券 × 东海证券</span><span class="t-meta">来源 · 新浪财经 / 21经济网</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- render hints -->
+<script>
+// Playwright render targets:
+// #wechat-21x9  → 2100×900  → output/wechat-21x9-cover.png
+// #wechat-1x1   → 1080×1080 → output/wechat-1x1-cover.png
+console.log('Render targets: #wechat-21x9 (2100x900), #wechat-1x1 (1080x1080)');
+</script>
+</body>
+</html>
